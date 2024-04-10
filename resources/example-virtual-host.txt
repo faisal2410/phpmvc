@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+    ServerName phpmvc.localhost
+    ServerAlias phpmvc.localhost
+
+    DocumentRoot "C:\path\to\phpmvc"
+
+    <Directory "C:\path\to\phpmvc">
+        Require all granted
+        AllowOverride All
+    </Directory>
+</VirtualHost>
